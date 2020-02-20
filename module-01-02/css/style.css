@@ -1,0 +1,14 @@
+
+@font-face {
+    font-family: 'Playfair Display', serif;
+    src: url(../fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+}
+
+.lifestyle-item {
+    display: inline-block;
+    width: 960px;
+}
