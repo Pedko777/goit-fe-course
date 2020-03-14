@@ -1,0 +1,178 @@
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Maven Pro', "Arial", serif;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    width: 255;
+    height: 282px;
+}
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+.page-header {
+    width: 1170px;
+    margin: 0 auto;
+    background-color:  #fff;
+    vertical-align: middle;
+}
+
+.site-logo {
+    float: left;
+}
+
+.page-nav a {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.site-logo::first-letter {
+    font-weight: bold;
+    color: #1abc9c;
+}
+
+.conteiner {
+    width: 1170px;
+    margin: 0 auto;
+    background-color:  #fff;
+    vertical-align: middle;
+    list-style: none;
+}
+.site-navigation {
+    float: right;
+    width: 505px;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    list-style: none;
+
+}
+
+.site-navigation li {
+    display: inline-block;
+}
+
+.site-navigation li:not(:last-child) {
+    margin-right: 35px;
+}
+
+.site-navigation a {
+    display: block;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 11px;
+    font-size: 14px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #1abc9c;
+}
+
+ h2 {
+    color: #515151;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 82px;
+    margin-bottom: 72px;
+}
+
+h2::after {
+    display: block;
+    width: 160px;
+    height: 8px;
+    margin: 0 auto;
+    background-color: #1abc9c;
+    content: "";
+}
+
+.product-list {
+    text-decoration: none;
+}
+
+.product-list-item  {
+    margin: 0;
+    float: left;
+    width: 255px;
+    height: 322px;
+    background-color: #e9f0fd;
+}
+
+
+.product-list-item:not(:nth-child(4n))  {
+    margin-right: 30px;
+}
+
+.product-list-item {
+    margin-bottom: 30px;
+}
+
+.product-bottom-block {
+    margin: 0;
+    padding: 0;
+}
+
+.product-name h3 {
+    display: inline-block;
+    font-size: 1.17em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.product-name {
+
+    margin: 0;
+    float: left;
+    width: 201px;
+}
+
+.product-coast {
+    width: 44;
+    float: right;
+    margin: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"]
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border:0;
+    padding: 0;
+    white-space:nowrap;
+    clip-path:inset(100%);
+    clip: rect(0 0 0 0);
+    overflow:hidden;
+}
+
+  
