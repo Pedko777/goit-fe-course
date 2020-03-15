@@ -18,8 +18,8 @@ body {
 
 img {
     display: block;
-    width: 255;
-    height: 282px;
+    max-width: 100%;
+    height: auto;
 }
 
 .clearfix::after {
@@ -36,6 +36,7 @@ img {
 
 .site-logo {
     float: left;
+    width: 635px;
 }
 
 .page-nav a {
@@ -110,11 +111,44 @@ h2::after {
     content: "";
 }
 
+h3 {
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+}
+
+h4::after {
+    margin-top: 15px;
+    display: block;
+    width: 136px;
+    height: 3px;
+    line-height: 32px;
+    background-color: #1abc9c;
+    content: "";
+}
+
+p {
+    margin: 0;
+}
+
 .product-list {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-list-item li {
     text-decoration: none;
 }
 
+.product-list-item img {
+    width: 255px;
+    height: 282px;
+}
 .product-list-item  {
+    list-style: none;
     margin: 0;
     float: left;
     width: 255px;
@@ -122,6 +156,13 @@ h2::after {
     background-color: #e9f0fd;
 }
 
+.product-list-item:hover .product-bottom-block h3 {
+    background-color: #1abc9c;
+}
+
+.product-list-item:hover .product-bottom-block p {
+    background-color: #7fd9c7;
+}
 
 .product-list-item:not(:nth-child(4n))  {
     margin-right: 30px;
@@ -132,31 +173,86 @@ h2::after {
 }
 
 .product-bottom-block {
+    display: block;
+    width: 255px;
+    height: 40px;
     margin: 0;
     padding: 0;
 }
 
-.product-name h3 {
-    display: inline-block;
-    font-size: 1.17em;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-.product-name {
-
-    margin: 0;
+.product-bottom-block h3 {
+    padding: 3px 10px;
+    display: block;
     float: left;
     width: 201px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #323232;
 }
 
-.product-coast {
-    width: 44;
-    float: right;
-    margin: 0;
+.product-bottom-block p {
+    padding-top: 3px;
+    display: block;
+    float: left;
+    width: 54px;
+    height: 40px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #8c8c8c;
 }
+
+.news-list-item  {
+    list-style: none;
+    margin: 0;
+    float: left;
+    width: 350px;
+    height: 262px;
+    background-color: #e9f0fd;
+}
+
+.news-list-item:not(:last-child)  {
+    margin-right: 30px;
+}
+
+.news-list-item img {
+    width: 350px;
+    height: 262px;
+    margin-bottom: 15px;
+}
+.news-list-item h4 {
+    color: #605e5e;
+    margin-bottom: 30px;
+}
+
+.news-list-item p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.news-list-item:hover .load-item-page {
+    background-color: #8c8c8c;
+}
+
+.load-item-page {
+    width: 160px;
+    height: 50px;
+    margin: 0 auto;
+    border: 1px solid#4ec6ab;
+    border-radius: 4px;
+    background-color: #4ec6ab;
+    margin-bottom: 50px;
+}
+
+.load-item-page a {
+	color: #ffffff;
+	font-size:16px;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    line-height: 26px;
+}   
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
