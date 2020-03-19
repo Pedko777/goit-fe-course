@@ -47,7 +47,7 @@ img {
   padding-bottom: 33px;
 }
 
-.container {
+.wrapper {
   width: 1110px;
   margin: 0 auto;
 }
@@ -208,6 +208,7 @@ img {
   line-height: 82px;
   font-weight: 900;
   letter-spacing: -1.2px;
+  text-transform: uppercase;
 }
   
 .slider-content_description {
@@ -215,6 +216,7 @@ img {
   line-height: 54px;
   font-weight: 300;
   letter-spacing: -0.5px;
+  text-transform: uppercase;
 }
 
                /* New Collection */
@@ -225,6 +227,7 @@ img {
 }
   
 .collection-title {
+  text-transform: uppercase;
   margin-bottom: 82px;
   font-size: 48px;
   font-family: var(--main-font);
@@ -297,7 +300,6 @@ img {
   background-color: var(--main-background-color);
 }
   
-
 .overlay {
   position: absolute;
   top: 0;
@@ -332,6 +334,7 @@ img {
 .overlay-icons button {
   background-repeat: no-repeat;
   cursor: pointer;
+  width: 170px
 }
   
 .overlay-icon button {
@@ -396,7 +399,7 @@ img {
 }
   
 .clock  {
-  background-image: url(/img/icon/icon_clock.png);
+  background-image: url(../img/icon/icon_clock.png);
 }
 
 /* Footer */
