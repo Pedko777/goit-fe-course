@@ -22,13 +22,20 @@ body, p, button, {
     line-height: 24px;
 }
 
+.page-header {
+    padding: 100px 0;
+}
+
 .container {
     width: 900px;
     margin: 0 auto;
 }
 
 .site-navigation {
+    display: block;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .site-navigation a {
@@ -43,9 +50,7 @@ body, p, button, {
     display: inline-block;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 75px;
-    margin-right: 100px;
-    margin-bottom: 100px;
+    margin-right: 75px;
 }
 
 .site-navigation li:last-child {
@@ -72,12 +77,12 @@ body, p, button, {
     color: #626262;
 }
 
-.post:nth-last-child(-n+2) {
-    margin-bottom: 55px;
-}
-
 .post:nth-child(even) {
     margin-right: 0;
+}
+
+.post .post-img {
+    padding-bottom: 30px
 }
 
 .post .category {
@@ -85,14 +90,16 @@ body, p, button, {
     font-weight: 300;
     font-size: 14px;
     color: rgb(180, 173, 158);
-    margin-top: 26px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 38px;
 }
 
 .post h3 {
     font-family: 'Playfair Display', serif;
     font-size: 30px;
+    margin: 0;
     margin-bottom: 35px;
     font-weight: normal;
 }
@@ -102,6 +109,13 @@ body, p, button, {
     font-weight: 400;
     text-align: unset;
     line-height: 24px;
+    margin: 0;
+}
+
+.btn-wrapper {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 75px;
 }
 
 .btn-more {
@@ -110,7 +124,6 @@ body, p, button, {
     font-size: 20px;
     border: 1px solid;
     padding: 20px 35px;
-    margin-bottom: 75px;
     background-color: transparent;
     cursor: pointer;
     color: #626262;
