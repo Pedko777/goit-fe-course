@@ -384,6 +384,7 @@ margin-bottom: 85px;
 }
 
 .page-footer p {
+    font-family: var(--secondary-font);
     font-size: 14px;
     line-height: 17px;
     font-weight: 400;
@@ -391,6 +392,7 @@ margin-bottom: 85px;
     margin-top: 30px;
     margin-bottom: 12px;
 }
+
 
 .page-footer span {
     text-transform: uppercase;
@@ -401,6 +403,10 @@ margin-bottom: 85px;
     color: #f38181;
     cursor: pointer;
 
+}
+
+.subscr {
+    align-items: center;
 }
 
 .subscr-input {
@@ -436,7 +442,9 @@ margin-bottom: 85px;
     transition: background-color 200ms linear;
 }
 
-.subscr__btn:hover,
-.subscr__btn:focus {
+.subscr-btn:hover:hover,
+.subscr-btn:focus {
     background-color: #f38181;
 }
+
+  
