@@ -230,7 +230,7 @@ input[type="radio"]
 
 .list-item-title {
     font-family: var(--main-font);
-    font-size: 14;
+    font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
     color: rgb(51, 51, 51);
@@ -258,8 +258,7 @@ margin-bottom: 85px;
 .team-text {
     display: block;
     margin: 0 auto;
-    width: 980px;
-    order: 3;
+    max-width: 980px;
     font-family: var(--secondary-font);
     font-size: 15px;
     line-height: 1.6;
@@ -292,7 +291,7 @@ margin-bottom: 85px;
     font-style: italic;
     font-weight: 300;
     line-height: 1.6;
-    color: rgb(153, 153, 153);;
+    color: rgb(153, 153, 153);
 }
   
 
@@ -353,8 +352,8 @@ margin-bottom: 85px;
     border-right: 1px solid rgba(243, 129, 129, 0.502);
 }
 
-.socials__link:hover,
-.socials__link:focus {
+.social-link:hover,
+.social-link:focus {
     background-color: #95e1d3;
 }
 
@@ -384,9 +383,19 @@ margin-bottom: 85px;
     align-items: center;
 }
 
+.page-footer p {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
 .page-footer span {
     text-transform: uppercase;
 }
+
 .madeby-link {
     display: inline-block;
     color: #f38181;
