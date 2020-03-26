@@ -1,0 +1,385 @@
+/* montserrat-regular - normal */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v14-latin-regular.eot');
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
+        url('../fonts/montserrat-v14-latin-regular.woff') format('woff');
+}
+
+/* montserrat-700 - normal */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v14-latin-700.eot');
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'),
+        url('../fonts/montserrat-v14-latin-700.woff') format('woff');
+}
+
+/* roboto-300 - normal */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/roboto-v20-latin-300.eot');
+    src: local('Roboto Light'), local('Roboto-Light'),
+        url('../fonts/roboto-v20-latin-300.woff2') format('woff2'),
+        url('../fonts/roboto-v20-latin-300.woff') format('woff');
+}
+
+/* roboto-regular - normal */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v20-latin-regular.eot');
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'),
+        url('../fonts/roboto-v20-latin-regular.woff') format('woff');
+}
+
+:root {
+    --main-font: 'Montserrat', sans-serif;
+    --secondary-font:'Roboto', sans-serif;
+    --main-color: rgb(255, 255, 255);
+    --secondary-color: rgb(255, 78, 80);
+    --third-color: rgb(51, 51, 51);
+}
+
+html {
+    box-sizing: border-box;
+}
+  
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+  
+a {
+    text-decoration: none;
+}
+    
+ul,
+ol {
+    list-style: none;
+}
+    
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 17px;
+}
+
+                    /*HEADER*/
+
+.header {
+    min-height: 540px;
+    background-image: url("../img/Header/bg-1.png");
+    background-color: rgb(26, 25, 21);
+    background-size: cover;
+    text-align: center;
+}
+
+.header-button {
+    min-width: 94px;
+    min-height: 40px;
+    border: 2px transparent var(--main-color);
+    border-radius: 20px;
+    background-color: transparent;
+    color: var(--main-color);
+    cursor: pointer;
+    transition: all 200ms linear;
+}
+
+.header-button:focus,
+.header-button:hover {
+    border: solid;
+    transform: translateY(1px)scale(1.1);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    text-decoration: none;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.header-title {
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin: 0;
+}
+
+.header-text {
+    font-family: var(--secondary-font);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--main-color);
+    padding: 0 30px;
+}
+
+.search-link {
+    display: block;
+    text-decoration: none;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    width: 280px;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 200ms linear;
+}
+
+.search-link:focus,
+.search-link:hover {
+    border: solid;
+    transform: translateY(1px)scale(1.1);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: var(--third-color);
+    text-align: center;
+}
+
+        /*PARTNERS*/
+        
+.partners-list {
+    margin: 0 auto;
+}
+ 
+.partner-list-card {
+    width: 220px;
+    transition: all 200ms linear;
+    margin: 0 auto;
+}
+
+.card-picture {
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.card-picture img {
+    border-radius: 50%;
+    transition: all 200ms linear;
+}
+
+.card-picture::after {
+    display: block;
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 4px solid var(--main-color);
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    background-color: var(--secondary-color);
+    bottom: -4px;
+    right: -4px;
+    transition: all 200ms linear;
+}
+
+.partner-list-card:hover .card-picture img,
+.partner-list-card:focus .card-picture img {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .5);
+}
+
+.partner-list-card:hover .card-picture img,
+.partner-list-card:focus .card-picture img,
+.partner-list-card:hover .card-picture::after,
+.partner-list-card:focus .card-picture::after {
+    transform: scale(1.1);
+}
+  
+.icon-tv::after {
+    background-image: url("../img/icons/icon_tv.png");
+    background-color: var(--secondary-color);
+}
+
+.icon-cup::after {
+    background-image: url("../img/icons/icon_cup.png");
+    background-color:  rgb(255, 165, 7);
+}
+  
+.icon-liquid::after {
+    background-image: url("../img/icons/icon_liquid.png");
+    background-color: rgb(28, 215, 173);
+}
+  
+.icon-plane::after {
+    background-image: url("../img/icons/icon_plane.png");
+    background-color: rgb(78, 115, 219);
+}
+
+.partner-card-title {
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--third-color);
+
+}
+
+.partner-card-aboute {
+    font-family: var(--secondary-font);
+    color: rgb(102, 102, 102);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.search-link-partners {
+    display: block;
+    text-decoration: none;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid var(--secondary-color);
+    border-radius: 20px;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    width: 284px;
+    height: 44px;
+    line-height: 44px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 200ms linear;
+    margin-bottom: 40px;
+}
+
+.search-link-partners:focus,
+.search-link-partners:hover {
+    border: solid;
+    transform: translateY(1px)scale(1.1);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 320px;
+    }
+
+    .header {
+        padding-top: 20px;
+        margin-bottom: 70px;
+    }
+
+    .button-wrap {
+        margin-bottom: 116px;
+    }
+
+    .logo-link {
+        margin-bottom: 35px;
+    }
+
+    .header-title {
+        margin-bottom: 35px;
+    }
+
+    .header-text {
+        margin-bottom: 18px;
+    }
+
+    .section-title {
+        margin-bottom: 16px;
+    }
+
+    .card-picture {
+        margin-bottom: 22px;
+    }
+
+    .partner-card-title {
+        margin-bottom: 19px;
+    }
+
+    .partner-card-aboute {
+        margin-bottom: 26px;
+    }
+
+    .search-link-partners {
+        margin-bottom: 57px;
+    }
+}
+    
+@media (min-width: 768px){
+
+    .header {
+        padding-top: 46px;
+        min-height: 700px;
+        background-image: url("../img/Header/bg-2.png");
+        margin-bottom: 74px;
+    }
+
+    .header-top {
+        margin-bottom: 148px;
+    }
+
+    .header-title {
+        font-size: 52px;
+        line-height: 1.2;
+        margin-bottom: 38px;
+    }
+
+    .header-text {
+        font-size: 24px;
+        margin-bottom: 35px;
+    }
+
+    .section-title {
+        margin-bottom: 34px;
+    }
+
+    .card-picture {
+        margin-bottom: 22px;
+    }
+
+    .partner-card-title {
+        margin-bottom: 19px;
+    }
+
+    .partner-card-aboute {
+        margin-bottom: 26px;
+    }
+
+    .search-link-partners {
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 940px) {
+
+    .header {
+        background-image: url("../img/Header/bg-3.png");
+    }
