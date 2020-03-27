@@ -293,7 +293,6 @@ body {
 
     .header {
         padding-top: 20px;
-        margin-bottom: 70px;
     }
 
     .button-wrap {
@@ -313,6 +312,7 @@ body {
     }
 
     .section-title {
+        padding-top:70px;
         margin-bottom: 16px;
     }
 
