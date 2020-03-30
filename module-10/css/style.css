@@ -138,6 +138,13 @@ body {
     background-size: cover;
 }
 
+@media (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .header {
+        background-image: linear-gradient(rgba(243, 129, 129, 0.9) 0%, rgba(252, 227, 138, 0.9) 100%), url("../img/header/bg@2x.png");
+    }
+}
+
 .page-nav {
     display: flex;
     justify-content: space-between;
@@ -500,7 +507,7 @@ body {
 
         /*FOOTER*/   
 
-.page-footer {
+.page__footer {
     display: flex;
     height: 62px;
     border-top: 1px solid #e5e5e5;
@@ -508,7 +515,7 @@ body {
     align-items: center;
 }
 
-.page-footer p {
+.page__footer p {
     font-family: var(--secondary-font);
     font-size: 14px;
     line-height: 17px;
@@ -519,11 +526,11 @@ body {
 }
 
 
-.page-footer span {
+.page__footer span {
     text-transform: uppercase;
 }
 
-.madeby-link {
+.footer__link {
     display: inline-block;
     color: #f38181;
     cursor: pointer;
@@ -534,14 +541,14 @@ body {
     align-items: center;
 }
 
-.subscr-input {
+.subscr__input {
     border: 1px solid #e7e7e7;
     width: 234px;
     height: 44px;
     padding-left: 12px;
 }
 
-.subscr-input::placeholder {
+.subscr__input::placeholder {
     font-size: 15px;
     font-family: var(--secondary-font);
     color: #cccccc;
@@ -550,7 +557,7 @@ body {
     line-height: 24px;
 }
 
-.subscr-btn {
+.subscr__btn {
     background-color: #95e1d3;
     width: 150px;
     height: 44px;
@@ -567,20 +574,13 @@ body {
     transition: background-color 200ms linear;
 }
 
-.subscr-btn:hover:hover,
-.subscr-btn:focus {
+.subscr__btn:hover:hover,
+.subscr__btn:focus {
     background-color: #f38181;
 }
 
 
 
-@media (min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .header {
-        background-image: linear-gradient(rgba(243, 129, 129, 0.9) 0%, rgba(252, 227, 138, 0.9) 100%), url("../img/header/bg@2x.png");
-    }
 
-
-}
 
 
