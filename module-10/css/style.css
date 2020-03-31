@@ -61,9 +61,6 @@
     --main-font-color: #333333;
     --secondary-font-color: #999999;
     --third-color: #ffffff;
-
-    --main-text-size: 14px;
-    --secondary-text-size: 15px;
 }
 
 
@@ -175,10 +172,6 @@ body {
 .logo:hover,
 .logo:focus {
     color: #fce38a;
-}
-
-.site-logo span {
-    text-transform: uppercase;
 }
 
 .navigation__list-item-link {
