@@ -386,7 +386,7 @@ body {
 }
 
 
-        /*TEAM*/
+/*   Team   */
 
 .team {
     text-align: center;
@@ -464,8 +464,8 @@ body {
     visibility: visible;
 }
     
-.team__list-item:hover .team-item-overlay,
-.team__list-item:focus .team-item-overlay {
+.team__list-item:hover .team__list-item-overlay,
+.team__list-item:focus .team__list-item-overlay {
     transform: translate(-10px, -10px);
     box-shadow: 10px 10px #95e1d3;
 }
